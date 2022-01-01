@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body {
+   background-color: rgb(14, 26, 82);
+   color: white;
+}
+.todolist {
+   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#myinput {
+   border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#addbtn,
+.listbtn {
+   border-radius: 100%;
+   background-color: rgba(195, 222, 231, 0.986);
+   box-shadow: 2px 2px 5px 1px black;
+   margin: 1px;
+   height: 100%;
+   padding: 1%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#addbtn:hover,
+.editbtn:hover {
+   background-color: rgb(8, 211, 8);
 }
-
-.App-link {
-  color: #61dafb;
+.rmvbtn:hover {
+   background-color: red;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listElement {
+   background-color: rgb(152, 29, 223);
+   margin-top: 5%;
+   border-radius: 7px;
+   padding: 2px;
+}
+.listElement:hover {
+   background-color: rgb(192, 120, 214);
+   color: black;
+}
+.listElement li {
+   overflow: hidden;
 }
